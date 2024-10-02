@@ -130,7 +130,6 @@ a:hover{
 
 .myworks {
     padding: 80px 100px;
-    background-color: #eeeeee;
 }
 
 .myworks h1 {
@@ -399,7 +398,6 @@ footer {
     padding-left: 100px;
     padding-right: 130px;
     padding-bottom: -50px;
-    height: 100vh;
 }
 
 .contact h1{
@@ -537,13 +535,15 @@ form textarea{
         position: relative;
         height: 100vh;
         background-color: black;
-        align-items: center
     }
     
     .home-img{
-        right: 0;
+        width: 100%;
+        padding: auto;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
         bottom: 0;
-        margin-left: 30px;
     }
     
     .home-content{
@@ -576,8 +576,8 @@ form textarea{
     }
     
     .home-img img{
-        width: 100px;
-        margin-right: px;
+        width: 300px;
+        margin: auto;
     }
     
     .home-content p button{
@@ -590,37 +590,26 @@ form textarea{
     }
     
     .whatido{
-        padding-top: 80px;
-        padding-left: 100px;
-        padding-right: 70px;
-        height: 100vh;
+        text-align: left;
+        padding: 0 10px;
+        position: relative;
+        padding-top: 30px;
+    }
+
+    .whatido img{
+        width: 300px;
+        height: 200px;
+        top: 0;
         position: relative;
     }
     
-    .whatido h1{
-        font-size: 40px;
-    }
-    
-    .whatido div{
-        margin: 50px 0;
-    }
-    
-    .whatido div ul li{
-        margin: 20px;
-        font-size: 17px;
-    }
-    
-    .whatido img{
-        position: absolute;
-        width: 500px;
-        height: 500px;
-        right: 0;
-        top: 100px;
-    }
-    
     .myworks {
-        padding: 80px 100px;
+        margin-top: 275px;
+        text-align: center;
+        padding: 0;
+        padding-top: 30px;
         background-color: #eeeeee;
+        position: relative;
     }
     
     .myworks h1 {
@@ -628,19 +617,17 @@ form textarea{
     }
     
     .projects-container {
-        display: flex; 
-        justify-content: space-between;
-        flex-wrap: wrap; 
         padding-top: 35px;
+        padding: 10px;
+        display: block;
     }
     
     .project {
-        width: 30%; 
-        margin: 10px 0; 
+        width: 100%;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
         padding: 15px;
         background: white; 
-        text-align: left;
+        text-align: c;
     }
     
     .project:hover{
@@ -702,10 +689,9 @@ form textarea{
     }
     
     .services{
-        padding-top: 140px;
-        padding-left: 100px;
-        padding-right: 100px;
-        padding-bottom: 80px;
+        padding: 10px;
+        padding-top: 120px;
+        padding-bottom: 25px;
     }
     
     .services h1{
@@ -724,14 +710,14 @@ form textarea{
     }
     
     .services-container{
-        display: flex; 
+        display: block; 
         justify-content: space-between;
         flex-wrap: wrap; 
         padding-top: 80px;
     }
     
     .service{
-        width: 30%; 
+        width: 100%; 
         margin-top: 30px; 
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
         padding: 15px;
@@ -754,9 +740,9 @@ form textarea{
     }
     
     .about{
-        display: flex;
-        padding: 140px 100px;
-        justify-content: space-between;
+        display: block;
+        padding: 10px;
+        padding-top: 120px;
     }
     
     .about-img{
@@ -764,9 +750,9 @@ form textarea{
     }
     
     .about-img img{
-        width: 400px;
-        height: 400px;
-        margin: 3px;
+        width: 350px;
+        height: 350px;
+        margin: 10px;
     }
     
     .buttons{
@@ -782,8 +768,9 @@ form textarea{
     }
     
     .about-content{
-        margin: 0 20px;
-        right: 0;
+        margin: 0;
+        margin-top: 30px;
+        padding: 10px;
     }
     
     .about-content h1{
@@ -885,46 +872,15 @@ form textarea{
     }
     
     .contact{
-        padding-top: 140px;
-        padding-left: 100px;
-        padding-right: 130px;
-        padding-bottom: -50px;
-        height: 100vh;
-    }
-    
-    .contact h1{
-        font-size: 40px;
+        padding: 0 10px;
+        padding-top: 120px;
         position: relative;
     }
-    
-    .s3{
-        position: absolute;
-    }
-    
-    .s1{
-        position: absolute;
-        width: 45px;
-        height: 45px;
-        background-color: chocolate;
-        transform: rotate(-30deg);
-    }
-    
-    .s2{
-        position: absolute;
-        width: 18px;
-        height: 18px;
-        background-color: chocolate;
-        transform: rotate(-30deg);
-        left: 148px;
-        top: 21px;
-    }
-    
+
     .contact-content{
-        display: flex;
-        justify-content: space-between;
-        padding-top: 50px;
-        font-size: 20px;
+        display: block;
     }
+    
     
     .contact-left-side div{
         margin-top: 30px;
@@ -944,16 +900,18 @@ form textarea{
     
     form{
         margin: 20px 0;
-        width: 500px;
+        max-width: 100%;
+        padding: 2px;
+        margin-bottom: 5px;
     }
     
     form input{
-        width: 250px;
+        width: 170px;
         height: 50px;
     }
     
     form textarea{
-        width: 520px;
+        width: 360px;
         margin-top: 10px;
         
     }
