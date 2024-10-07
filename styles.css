@@ -718,12 +718,13 @@ form textarea{
     
     .about-img{
         position: relative;
+        padding: 5px;
     }
     
     .about-img img{
         width: 350px;
         height: 350px;
-        margin: 10px;
+        margin: 5px;
     }
     
     .buttons{
@@ -781,7 +782,7 @@ form textarea{
     }
     
     .about-img:hover .horizontal {
-        left: 310px; /* Move to the left edge */
+        left: 305px; /* Move to the left edge */
     }
     
     .about-img:hover .vertical {
@@ -790,14 +791,14 @@ form textarea{
     
     .horizontal2 {
         bottom: 2px; /* Center vertically */
-        left: 310px; /* Start from the center */
+        left: 305px; /* Start from the center */
         height: 2px; /* Thickness of the line */
         width: 120px; /* Width stays the same */
         transform: translate(-50%, -50%); /* Center the line */
     }
     
     .vertical2 {
-        right: -1px; /* Center horizontally */
+        right: -7px; /* Center horizontally */
         top: 310px; /* Start from the center */
         width: 2px; /* Thickness of the line */
         height: 120px; /* Height stays the same */
