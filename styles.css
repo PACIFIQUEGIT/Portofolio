@@ -280,7 +280,7 @@ footer {
 
 .buttons{
     position: absolute;
-    right: 3px;
+    right: 4px;
     bottom: 7px;
 }
 
@@ -309,89 +309,60 @@ footer {
     font-size: 17px;
 }
 
-.l2{
-    width: 180px;
-    height: 4px;
-    background-color: black;
-    transition: .3s ease;
-}
-
-.l3{
-    height: 180px;
-    width: 1px;
-    border-right: solid black;
-    transition: .3s ease;
-}
-
-.ll{
-    display: flex;
-}
-
-.l4{
+.half-line {
     position: absolute;
-    bottom: 1px;
-    right: -3px;
-    height: 180px;
-    width: 1px;
-    border-right: solid black;
-    transition: .3s ease;
+    background-color: black; /* Change color as needed */
+    transition: left 0.5s ease, top 0.5s ease; /* Transition for smooth effect */
 }
 
-.l5{
-    position: absolute;
-    width: 180px;
-    height: 4px;
-    background-color: black;
-    right: -4px;
-    transition: .3s ease;
+.horizontal {
+    top: 0; /* Center vertically */
+    left: 60px; /* Start from the center */
+    height: 2px; /* Thickness of the line */
+    width: 120px; /* Width stays the same */
+    transform: translate(-50%, -50%); /* Center the line */
 }
 
-.about-img:hover{
-
-    .about-img img{
-        position: absolute;
-        width: 400px;
-        height: 400px;
-        margin: 3px;
-        left: 2px;
-        top:8px;
-        right: 4px;
-    }
-
-    .l2{
-        position: absolute;
-        width: 180px;
-        height: 4px;
-        background-color: black;
-        right: -4px;
-    }
-
-    .l3{
-        position: absolute;
-        bottom: 1px;
-        height: 180px;
-        width: 1px;
-        border-left: solid black;
-    }
-
-    .l4{
-        position: absolute;
-        top: 1px;
-        right: -5px;
-        height: 180px;
-        width: 1px;
-        border-right: solid black;
-    }
-
-    .l5{
-        position: absolute;
-        width: 180px;
-        height: 4px;
-        background-color: black;
-        left: 0;
-        bottom: 0;
-    }
+.vertical {
+    left: 0; /* Center horizontally */
+    top: 59px; /* Start from the center */
+    width: 2px; /* Thickness of the line */
+    height: 120px; /* Height stays the same */
+    transform: translate(-50%, -50%); /* Center the line */
 }
+
+.about-img:hover .horizontal {
+    left: 346px; /* Move to the left edge */
+}
+
+.about-img:hover .vertical {
+    top: 345px; /* Move to the top edge */
+}
+
+.horizontal2 {
+    bottom: 2px; /* Center vertically */
+    left: 345px; /* Start from the center */
+    height: 2px; /* Thickness of the line */
+    width: 120px; /* Width stays the same */
+    transform: translate(-50%, -50%); /* Center the line */
+}
+
+.vertical2 {
+    right: -1px; /* Center horizontally */
+    top: 347px; /* Start from the center */
+    width: 2px; /* Thickness of the line */
+    height: 120px; /* Height stays the same */
+    transform: translate(-50%, -50%); /* Center the line */
+}
+
+.about-img:hover .horizontal2 {
+    left: 59px; /* Move to the left edge */
+}
+
+.about-img:hover .vertical2 {
+    top: 60px; /* Move to the top edge */
+}
+
 
 .contact{
     padding-top: 140px;
@@ -787,88 +758,58 @@ form textarea{
         font-size: 17px;
     }
     
-    .l2{
-        width: 180px;
-        height: 4px;
-        background-color: black;
-        transition: .3s ease;
-    }
-    
-    .l3{
-        height: 180px;
-        width: 1px;
-        border-right: solid black;
-        transition: .3s ease;
-    }
-    
-    .ll{
-        display: flex;
-    }
-    
-    .l4{
+    .half-line {
         position: absolute;
-        bottom: 1px;
-        right: -3px;
-        height: 180px;
-        width: 1px;
-        border-right: solid black;
-        transition: .3s ease;
+        background-color: black; /* Change color as needed */
+        transition: left 0.5s ease, top 0.5s ease; /* Transition for smooth effect */
     }
     
-    .l5{
-        position: absolute;
-        width: 180px;
-        height: 4px;
-        background-color: black;
-        right: -4px;
-        transition: .3s ease;
+    .horizontal {
+        top: 0; /* Center vertically */
+        left: 60px; /* Start from the center */
+        height: 2px; /* Thickness of the line */
+        width: 120px; /* Width stays the same */
+        transform: translate(-50%, -50%); /* Center the line */
     }
     
-    .about-img:hover{
+    .vertical {
+        left: 0; /* Center horizontally */
+        top: 59px; /* Start from the center */
+        width: 2px; /* Thickness of the line */
+        height: 120px; /* Height stays the same */
+        transform: translate(-50%, -50%); /* Center the line */
+    }
     
-        .about-img img{
-            position: absolute;
-            width: 400px;
-            height: 400px;
-            margin: 3px;
-            left: 2px;
-            top:8px;
-            right: 4px;
-        }
+    .about-img:hover .horizontal {
+        left: 310px; /* Move to the left edge */
+    }
     
-        .l2{
-            position: absolute;
-            width: 180px;
-            height: 4px;
-            background-color: black;
-            right: -4px;
-        }
+    .about-img:hover .vertical {
+        top: 310px; /* Move to the top edge */
+    }
     
-        .l3{
-            position: absolute;
-            bottom: 1px;
-            height: 180px;
-            width: 1px;
-            border-left: solid black;
-        }
+    .horizontal2 {
+        bottom: 2px; /* Center vertically */
+        left: 310px; /* Start from the center */
+        height: 2px; /* Thickness of the line */
+        width: 120px; /* Width stays the same */
+        transform: translate(-50%, -50%); /* Center the line */
+    }
     
-        .l4{
-            position: absolute;
-            top: 1px;
-            right: -5px;
-            height: 180px;
-            width: 1px;
-            border-right: solid black;
-        }
+    .vertical2 {
+        right: -1px; /* Center horizontally */
+        top: 310px; /* Start from the center */
+        width: 2px; /* Thickness of the line */
+        height: 120px; /* Height stays the same */
+        transform: translate(-50%, -50%); /* Center the line */
+    }
     
-        .l5{
-            position: absolute;
-            width: 180px;
-            height: 4px;
-            background-color: black;
-            left: 0;
-            bottom: 0;
-        }
+    .about-img:hover .horizontal2 {
+        left: 60px; /* Move to the left edge */
+    }
+    
+    .about-img:hover .vertical2 {
+        top: 60px; /* Move to the top edge */
     }
     
     .contact{
@@ -880,8 +821,7 @@ form textarea{
     .contact-content{
         display: block;
     }
-    
-    
+       
     .contact-left-side div{
         margin-top: 30px;
     }
@@ -935,3 +875,4 @@ form textarea{
     }
 
   }
+
