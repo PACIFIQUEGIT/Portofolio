@@ -20,10 +20,19 @@ fetch('url', {
         div.classList.add("project")
         div.innerHTML = 
         `<img src="images/2024-10-15 (3).png" alt="Project Title 2 Screenshot" >
-        <p><strong>Title:</strong>${p.title}</p>
-        <p><strong>Description:</strong>${p.description}</p>
-        <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript.</p>
-        <a href="https://linkedin-clone-sigma-ashen.vercel.app/" target="_blank">View Project</a>`
+        <p><strong>Title:</strong> ${p.title}</p>
+        <p><strong>Description:</strong> ${p.description}</p>
+        <p><strong>Technologies Used:</strong> ${p.skills}</p>
+        <a href="${p.projectUrl}" target="_blank">View Project</a>`
         container1.appendChild(div)
+    });
+    const container2 = document.querySelector(".about_container2")
+    data[1].about.map(a => {
+        const div = document.createElement("div")
+        div.classList.add("about-content")
+        div.innerHTML =
+        `<h1>${a.title}</h1>
+        <p>${a.description}</p>`
+        container2.appendChild(div)
     })
  })
