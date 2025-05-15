@@ -19,7 +19,7 @@ fetch('url', {
         const div = document.createElement("div")
         div.classList.add("project")
         div.innerHTML = 
-        `<img src="images/2024-10-15 (3).png" alt="Project Title 2 Screenshot" >
+        `<img src="${p.imageUrl || 'images/default.png'}" alt="${p.title} Screenshot">
         <p><strong>Title:</strong> ${p.title}</p>
         <p><strong>Description:</strong> ${p.description}</p>
         <p><strong>Technologies Used:</strong> ${p.skills}</p>
