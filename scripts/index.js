@@ -1,5 +1,5 @@
 const fetchUsers = async () =>{
-    const res = await fetch('https://portofolio-express.onrender.com/api/v1/users')
+    const res = await fetch('https://portfolio-express-7pc7.onrender.com/api/v1/users')
     const users = await res.json()
     return users
 }
